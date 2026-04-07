@@ -28,10 +28,10 @@ Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, -1);
 // --- En este fragmento es donde estan los datos de la wifi a la que nos vamos a conectar
 // --- recuerda poner los tuyos
 
-const char* ssid = "XXXXXXXXXXXXXXXXX";
-const char* password = "XXXXXXXXXXXXXX";
-String apiKey = "XXXXXXXXXXXXXXXXXXXX"; // -- apikey que te da openweathermap.org cuando te registras
-String ciudad = "Madrid,ES";
+const char* ssid = "XXXXXXXXXXXX";  // --nombre de tu wifi
+const char* password = "XXXXXXXXXX"; // -- contraseña de tu wifi
+String apiKey = "XXXXXXXXXXXXXXXXXXXXXXXX"; // -- apikey que te da openweathermap.org cuando te registras
+String ciudad = "Madrid,ES"; // -- Tu ciudad
 
 
 // --- Nos permite seleccionar el icono a dibujar segun el clima. Solo hice 4
@@ -63,10 +63,19 @@ void setup() {
   // --- Si el display no se inicializa el programa no arranca
   Serial.begin(115200);
   if(!display.begin(SSD1306_SWITCHCAPVCC, 0x3C)) { for(;;); }
+
+  display.clearDisplay();
+  display.setTextColor(SSD1306_WHITE);
+  display.setTextSize(2);
+  display.setCursor(5,30);
+  display.println("METEO 1.00");
+  display.display();
+  delay (5000);
   
   display.clearDisplay();
   display.setTextColor(SSD1306_WHITE);
-  display.setCursor(0,10);
+  display.setTextSize(1);
+  display.setCursor(0,20);
   display.println("Conectando a WiFi...");
   display.display();
 
@@ -74,7 +83,7 @@ void setup() {
   while (WiFi.status() != WL_CONNECTED) { delay(500); Serial.print("."); }
 
   display.clearDisplay();
-  display.setCursor(0,10);
+  display.setCursor(0,20);
   display.println("-Conectado!-");
   display.display();
   delay(1000);
