@@ -9,6 +9,11 @@ Programada en una tarde, Meteo es un buen proyecto para acercarse a las placas d
 La idea es programar una estación metereologica desde ***Visual Studio Code***
 que nos sirva para comenzar a relacionarnos con ese entorno de trabajo y la programacion desde el entorno arduino, por lo que realmente este progroma no representa una novedad en lo que a código se refiere
 
+< p align="center">
+[![Meteo: Estación Meteorológica Básica](https://img.youtube.com/vi/L3shunAluEo/0.jpg)](https://www.youtube.com/watch?v=L3shunAluEo)
+</p>
+
+
 ## 📋 Características
 
 La información metereolólogica se extrae de [openweathermap.org](https://home.openweathermap.org) por lo que necesitaras una cuenta que te permita acceder a la clave api, para que tu programa pueda optener la informacion necesario. Por lo demas es muy básica, tiene iconos para cuatro estados del tiempo y nos muestra la ciudad, la temperatura, la humedad, el estado del tiempo y un icono representativo de ese estado.
