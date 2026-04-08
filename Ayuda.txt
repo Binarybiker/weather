@@ -1,0 +1,42 @@
+
+DESCARGO DE RESPONSABILIDAD: El uso de este programa es exclusivamente bajo su propio riesgo. Este es un proyecto de carácter no comercial y educativo. No se garantiza que el software sea compatible con todo el hardware o que esté libre de errores. El desarrollador no se hace responsable de la pérdida de datos, daños en el hardware o cualquier otro inconveniente derivado de su instalación o uso.
+
+
+
+Os dejo este texto a modo de guia para la instalación de VS Code en Ubuntu y derivados con el paquete .deb
+
+1.- Instalacion de VSC
+
+    - En la página oficial descarga el .deb
+    - Ábrelo con el instalador de paquetes GDebi (clic derecho -> Abrir con...) y dale a "Instalar paquete". Si no lo tienes
+      lo puedes obtener del gestor de software de tu distribucion
+
+2.- Preparar nuestro linux
+
+    - Necesitamos que nuestro usuario pueda comunicarse con las placas de desarrollo y para ello tenemos que pertenecer al
+      grupo dialout. Abre una terminal y escribe sudo usermod -a -G dialout $USER Necesitaremos reiniciar el pc o al menos
+      cerrar y volver a abrir sesión para que tenga efecto.
+
+3.- Instalar PlatformIO en VS Code
+
+    - Ejecuta VS Code y busca en la barra lateral izquierda un icono cuadrado llamado extensiones y pulsalo
+    - Busca PlatformIO IDE e instalalo
+    - Tarda un poco no te preocupes, no cierres VS Code. Cuando termine veras en la barra lateral izquierda el icono
+      de la cabeza de una hormiga lo que indica que ya esta instalado.
+
+4.- Funcionamiento
+
+    - Haz clic en el icono de la hormiga y luego en open
+    - En la pantalla que aparece (PIO Home) clica New Project
+    - En la ventana que se abre veras NOMBRE: Dale un nombre a tu proyecto, debajo BOARD: Escribe el modelo de tu placa 
+      (ej. Arduino Uno) y por ultimo asegurate que en FRAMEWORK: diga Arduino
+    - Pulsa FINISH, la primera vez tarda bastante porque necesita descargar todo lo necesario para trabajar con la placa
+
+
+Listo. El codigo va en la carpeta src en el archivo main.ccp es igual que el de arduino pero debe lleva esto #include <Arduino.h>, si no sale por defecto ponlo.
+
+Para Compilar, haz clic en el icono del "Check" (✓) que aparece en la barra de abajo del todo. Para Subir a la placa haz clic en el icono de la "Flecha" (→) en la misma barra. Para el Monitor Serie haz clic en el icono del "Enchufe" para ver los datos que envía tu Arduino.
+
+Esto es todo lo básico para empezar, si ha ido bien tendras tu código en marcha el la placa.
+
+        

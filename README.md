@@ -7,15 +7,15 @@ Programada en una tarde, Meteo es un buen proyecto para acercarse a las placas d
 ## 🚀 Introduccion
 
 La idea es programar una estación metereologica desde ***Visual Studio Code***
-que nos sirva para comenzar a relacionarnos con ese entorno de trabajo, por lo que realmente este progroma no representa una novedad en lo que a código se refiere
+que nos sirva para comenzar a relacionarnos con ese entorno de trabajo y la programacion desde el entorno arduino, por lo que realmente este progroma no representa una novedad en lo que a código se refiere
 
 ## 📋 Características
 
-La información metereolólogica se extrae de [openweathermap.org](https://home.openweathermap.org) por lo que necesitara una cuenta que te permita acceder a la clave api, necesaria para que tu programa pueda ver la informacion. Por lo demas es muy básica, tiene iconos para cuatro estods del tiempo y nos muestra la ciudad, la temperatura, la humedad, el estado del tiempo y un icono representativo de ese estado.
+La información metereolólogica se extrae de [openweathermap.org](https://home.openweathermap.org) por lo que necesitaras una cuenta que te permita acceder a la clave api, para que tu programa pueda optener la informacion necesario. Por lo demas es muy básica, tiene iconos para cuatro estados del tiempo y nos muestra la ciudad, la temperatura, la humedad, el estado del tiempo y un icono representativo de ese estado.
 
 ## 🛠️ Tecnologías utilizadas
 
-En este apartado tampoco vamos a sorprender a nadie, son todos elementos sencillos muy faciles de conseguir.
+En este apartado tampoco vamos a sorprender a nadie, son todos elementos sencillos muy faciles de conseguir. El reto está un poco en hacerlo desde Visual Studio Code para alguien que nunca ha usado este software.
 
 * Una placa de desarrollo ESP8266 Wemos D1 Mini
 * Una pantalla oled SSD1306 I2c
@@ -38,3 +38,4 @@ Tambien dispondreis del archivo platformio.ini absolutamente necesario para la c
 - [@Binarybiker](https://github.com/Binarybiker)
 - [www.binarybiker.men](https://www.binarybiker.men)
 
+NOTA: Este es un programa de uso no comercial y educativo. Se entrega "tal cual", sin garantías de funcionamiento ni soporte oficial. El autor no se hace responsable de efectos directos o indirectos del software, ni de posibles daños físicos en la placa, componentes electrónicos o periféricos derivados de la carga de firmware o el uso del código. El usuario asume toda la responsabilidad al ejecutarlo.
