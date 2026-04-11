@@ -40,7 +40,9 @@ Tambien dispondreis del archivo platformio.ini absolutamente necesario para la c
 
 ## 💬 Contacto
 
-[![Contact Form](https://img.shields.io/badge/CONTACT%20FORM-brightgreen?style=flat-square)](https://tally.so/r/D4JADZ)
+<a href="https://tally.so/r/D4JADZ" target="_blank">
+  <img src="https://img.shields.io/badge/CONTACT FORM-brightgreen?style=flat-square" alt="Contacto">
+</a>
 
 ## 👨‍💻 Autor
 
