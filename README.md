@@ -38,6 +38,10 @@ Tambien dispondreis del archivo platformio.ini absolutamente necesario para la c
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 
+## 💬 Contacto
+
+[![Contact Form](https://img.shields.io/badge/CONTACT%20FORM-brightgreen?style=flat-square)](https://tally.so/r/D4JADZ)
+
 ## 👨‍💻 Autor
 
 - [@Binarybiker](https://github.com/Binarybiker)
